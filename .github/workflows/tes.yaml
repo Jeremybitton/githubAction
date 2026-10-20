@@ -1,0 +1,13 @@
+name: test de GitHub Actions
+on: [push]
+
+jobs:
+  info-system:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Affichage des infos systéme
+        run: 
+          echo "Déclenche par PUSH"
+          uname -a
+          whoami
+          env | sort
